@@ -146,7 +146,12 @@ export const Navbar = () => {
       <NavigationMenu className="hidden lg:block">
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-card text-base">
+            <NavigationMenuLink key={"#features"} asChild>
+              <Link href={"#features"} className="justify-start text-base px-2">
+                Features
+              </Link>
+            </NavigationMenuLink>
+            {/* <NavigationMenuTrigger className="bg-card text-base">
               Features
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -174,7 +179,7 @@ export const Navbar = () => {
                   ))}
                 </ul>
               </div>
-            </NavigationMenuContent>
+            </NavigationMenuContent> */}
           </NavigationMenuItem>
 
           <NavigationMenuItem>

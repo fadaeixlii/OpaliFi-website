@@ -8,46 +8,43 @@ interface FeaturesProps {
   title: string;
   description: string;
 }
-
 const featureList: FeaturesProps[] = [
   {
     icon: "TabletSmartphone",
-    title: "Mobile Friendly",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+    title: "Integrated Trading Platform",
+    description: "Opalifi provides a seamless trading experience.",
   },
   {
     icon: "BadgeCheck",
-    title: "Social Proof",
+    title: "Multi-Currency Wallet",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "With Opalifi, you can manage multiple cryptocurrencies simultaneously.",
   },
   {
     icon: "Goal",
-    title: "Targeted Content",
+    title: "Integration with DeFi Applications",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Opalifi allows direct access to DeFi, CeFi services from your wallet.",
   },
   {
     icon: "PictureInPicture",
-    title: "Strong Visuals",
+    title: "Advanced Security Technology",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Opalifi uses advanced security technologies to protect your assets.",
   },
   {
     icon: "MousePointerClick",
-    title: "Clear CTA",
+    title: "Simple and User-Friendly Interface",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Opalifi's interface is designed to be easy for even new users to navigate.",
   },
   {
     icon: "Newspaper",
-    title: "Clear Headline",
+    title: "Automated Asset Management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Opalifi allows you to manage your assets automatically without having to move anywhere.",
   },
 ];
-
 export const FeaturesSection = () => {
   return (
     <section id="features" className="container py-24 sm:py-32">
@@ -57,19 +54,19 @@ export const FeaturesSection = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          What Makes Us Different
+          Why is{" "}
+          <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
+            OpaliFi
+          </span>{" "}
+          Different from Others?
         </h2>
       </Reveal>
 
       <Reveal>
         <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-          Enhanced Security: In{" "}
-          <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-            OpaliFi
-          </span>
-          , you place your orders first, and assets are only transferred once
-          the trades are matched. This means greater security and reduced
-          transfer risks
+          In the competitive landscape of digital currencies, Opalifi stands out
+          by offering unique features that enhance user experience and maximize
+          benefits.
         </h3>
       </Reveal>
       <Reveal>

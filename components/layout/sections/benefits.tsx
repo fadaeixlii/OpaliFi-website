@@ -8,31 +8,30 @@ interface BenefitsProps {
   title: string;
   description: string;
 }
-
 const benefitList: BenefitsProps[] = [
   {
     icon: "Blocks",
-    title: "Build Brand Trust",
+    title: "Unmatched Security",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Opalifi provides the highest level of security for your digital assets. With advanced encryption technology and secure transactions, you can rest assured that your funds are always safe",
   },
   {
     icon: "LineChart",
-    title: "More Leads",
+    title: "Flexible Financial Management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Effortlessly manage your finances in both centralized and decentralized environments without the need for immediate asset transfers. Opalifi allows you to place orders and trade directly from your wallet.",
   },
   {
     icon: "Wallet",
-    title: "Higher Conversions",
+    title: "User-Friendly Interface",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Our intuitive design and user-friendly interface make managing your digital assets simple for everyone, whether you're an experienced trader or just starting out.",
   },
   {
     icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    title: "Comprehensive Features",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "From intelligent trading bots to investment opportunities in emerging projects, Opalifi offers a wide range of functionalities for all your financial needs.",
   },
 ];
 
@@ -76,10 +75,10 @@ export const BenefitsSection = () => {
                     </span>
                   </div>
 
-                  <CardTitle>{title}</CardTitle>
+                  <CardTitle className="text-lg">{title}</CardTitle>
                 </CardHeader>
 
-                <CardContent className="text-muted-foreground">
+                <CardContent className="text-muted-foreground text-sm">
                   {description}
                 </CardContent>
               </Card>

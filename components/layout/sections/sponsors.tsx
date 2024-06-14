@@ -9,35 +9,38 @@ interface sponsorsProps {
   icon: string;
   name: string;
 }
-
 const sponsors: sponsorsProps[] = [
   {
     icon: "Crown",
-    name: "Acmebrand",
+    name: "OpaliWallet",
   },
   {
     icon: "Vegan",
-    name: "Acmelogo",
+    name: "OpaliConnect",
   },
   {
     icon: "Ghost",
-    name: "Acmesponsor",
+    name: "OpaliKYC",
   },
   {
     icon: "Puzzle",
-    name: "Acmeipsum",
+    name: "OpaliBot",
   },
   {
     icon: "Squirrel",
-    name: "Acme",
+    name: "OpaliExchange",
   },
   {
     icon: "Cookie",
-    name: "Accmee",
+    name: "OpaliInvesting",
   },
   {
     icon: "Drama",
-    name: "Acmetech",
+    name: "OpaliDeFi",
+  },
+  {
+    icon: "Drama",
+    name: "OpaliComunity",
   },
 ];
 
@@ -45,9 +48,7 @@ export const SponsorsSection = () => {
   return (
     <section id="sponsors" className="max-w-[75%] mx-auto pb-24 sm:pb-32">
       <Reveal>
-        <h2 className="text-lg md:text-xl text-center mb-6">
-          Our Platinum Sponsors
-        </h2>
+        <h2 className="text-lg md:text-xl text-center mb-6">Our Projects</h2>
       </Reveal>
 
       <div className="mx-auto">
