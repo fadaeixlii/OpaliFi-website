@@ -75,10 +75,10 @@ export const BenefitsSection = () => {
                     </span>
                   </div>
 
-                  <CardTitle className="text-lg">{title}</CardTitle>
+                  <CardTitle className="text-lg text-center">{title}</CardTitle>
                 </CardHeader>
 
-                <CardContent className="text-muted-foreground text-sm">
+                <CardContent className="text-muted-foreground text-sm ">
                   {description}
                 </CardContent>
               </Card>
