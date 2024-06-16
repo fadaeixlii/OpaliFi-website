@@ -138,7 +138,6 @@ html {
 }
 
 * {
-  @apply ltr:font-[inter] rtl:font-[VazirmatnFa];
   &::-webkit-scrollbar {
     width: 5px;
     height: 5px;

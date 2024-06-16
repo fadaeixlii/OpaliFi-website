@@ -1,4 +1,5 @@
 "use client";
+import { AnimationLanding } from "@/components/AnimationLanding";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Reveal from "@/components/ui/reveal";
@@ -11,8 +12,8 @@ export const HeroSection = () => {
   const { theme } = useTheme();
   return (
     <section className="container w-full">
-      <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
-        <div className="text-center space-y-8">
+      <div className="flex items-center w-full justify-between lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
+        <div className="text-center space-y-8 ">
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
             <Reveal>
               <h1>
@@ -42,17 +43,25 @@ export const HeroSection = () => {
             <Button
               asChild
               variant="secondary"
-              className="w-5/6 md:w-1/4 font-bold"
+              className="w-5/6 md:w-1/4 font-bold group/origami"
             >
               <Link
                 href="https://opallify.gitbook.io/whitepaper-opalifi/"
                 target="_blank"
               >
                 Whitepaper
+                <Image
+                  src={"/images/Origami.svg"}
+                  alt="getStart"
+                  className="size-5 ml-2 group-hover/origami:translate-x-1 transition-transform"
+                  width={20}
+                  height={20}
+                />
               </Link>
             </Button>
           </div>
         </div>
+        <AnimationLanding />
       </div>
     </section>
   );
