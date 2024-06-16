@@ -17,6 +17,7 @@ import { useEffect } from "react";
 import MotionWrap from "@/components/motion-wrap";
 import { contact } from "./contact/config";
 import { contactSubmit } from "@/app/action";
+import Image from "next/image";
 
 interface ValidationErrors {
   success: boolean;
@@ -65,8 +66,14 @@ function Contact() {
             <div className="flex space-x-1">
               {contact.socials?.github && (
                 <Button variant="outline" size="icon" asChild>
-                  <a target="_blank" href={contact.socials.youtube}>
-                    <YoutubeIcon className="h-4 w-4" />
+                  <a target="_blank" href={contact.socials.telegram}>
+                    <Image
+                      src={"/images/Telegram.svg"}
+                      alt="telegram "
+                      className="size-4 dark:invert"
+                      width={16}
+                      height={16}
+                    />
                   </a>
                 </Button>
               )}

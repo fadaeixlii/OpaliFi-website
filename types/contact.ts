@@ -1,6 +1,6 @@
 export interface Socials {
   github?: string;
-  youtube?: string;
+  telegram?: string;
   twitter?: string;
   linkedin?: string;
 }

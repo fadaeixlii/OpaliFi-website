@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import Reveal from "@/components/ui/reveal";
 import { icons } from "lucide-react";
+import Image from "next/image";
 
 interface FeaturesProps {
   icon: string;
@@ -10,36 +11,36 @@ interface FeaturesProps {
 }
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
+    icon: "/images/GridCheck.svg",
     title: "Integrated Trading Platform",
     description: "Opalifi provides a seamless trading experience.",
   },
   {
-    icon: "BadgeCheck",
+    icon: "/images/Wallet.svg",
     title: "Multi-Currency Wallet",
     description:
       "With Opalifi, you can manage multiple cryptocurrencies simultaneously.",
   },
   {
-    icon: "Goal",
+    icon: "/images/Goal.svg",
     title: "Integration with DeFi Applications",
     description:
       "Opalifi allows direct access to DeFi, CeFi services from your wallet.",
   },
   {
-    icon: "PictureInPicture",
+    icon: "/images/ShieldCheck.svg",
     title: "Advanced Security Technology",
     description:
       "Opalifi uses advanced security technologies to protect your assets.",
   },
   {
-    icon: "MousePointerClick",
+    icon: "/images/MousePointerClick.svg",
     title: "Simple and User-Friendly Interface",
     description:
       "Opalifi's interface is designed to be easy for even new users to navigate.",
   },
   {
-    icon: "Newspaper",
+    icon: "/images/Crown.svg",
     title: "Automated Asset Management",
     description:
       "Opalifi allows you to manage your assets automatically without having to move anywhere.",
@@ -76,11 +77,12 @@ export const FeaturesSection = () => {
               <Card className="h-full bg-background border-0 shadow-none">
                 <CardHeader className="flex justify-center items-center">
                   <div className="bg-primary/20 p-2 rounded-full ring-8 ring-primary/10 mb-4">
-                    <Icon
-                      name={icon as keyof typeof icons}
-                      size={24}
-                      color="hsl(var(--primary))"
-                      className="text-primary"
+                    <Image
+                      alt={icon}
+                      src={icon}
+                      width={24}
+                      height={24}
+                      className="size-6"
                     />
                   </div>
 
